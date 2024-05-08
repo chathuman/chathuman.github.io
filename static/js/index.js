@@ -48,12 +48,12 @@ $(document).ready(function() {
 
     let options = {
 			slidesToScroll: 1,
-			slidesToShow: 4,
-			loop: false,
+			slidesToShow: 3,
+			loop: true,
 			infinite: false,
             pagination: false,
-			autoplay: false,
-			autoplaySpeed: 3000,
+			autoplay: true,
+			autoplaySpeed: 26000,
     }
 
 		// Initialize all div with carousel class

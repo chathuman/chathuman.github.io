@@ -109,6 +109,7 @@
     </script>
 </head>
 
+
 <body>
 
     <section class="hero">
@@ -116,30 +117,31 @@
           <div class="container is-fullhd">
             <div class="columns is-centered">
               <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">ChatHuman: Language-driven 3D Human Understanding </br> with Retrieval-Augmented Tool Reasoning</h1>
+                <h1 class="title is-3 publication-title">ChatHuman: Language-driven 3D Human Understanding </br> with Retrieval-Augmented Tool Reasoning</h1>
                 <div class="is-size-5 publication-authors">
                   <span class="author-block">
                     <a target="_blank" href="https://jinglin7.github.io/">Jing Lin</a><sup>3,4,*</sup>,
                   </span>
                   <span class="author-block">
-                    <a target="_blank" href="https://scholar.google.com/citations?user=wNQQhSIAAAAJ&hl=en">Yao Feng</a><sup>1,2,3,*†</sup>,
+                    <a target="_blank" href="https://scholar.google.com/citations?user=wNQQhSIAAAAJ&hl=en">Yao Feng</a><sup>1,2,3,*,†</sup>,
                   </span>
                   <span class="author-block">
                     <a target="_blank" href="https://wyliu.com/">Weiyang Liu</a><sup>1,5</sup>,
                   </span>
                   <span class="author-block">
-                    <a target="_blank" href="https://ps.is.mpg.de/person/black">Michael J. Black</a><sup>3</sup>,
+                    <a target="_blank" href="https://ps.is.mpg.de/person/black">Michael J. Black</a><sup>1</sup>
                   </span>
                 </div>
       
                 <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>*</sup>Equal contribution,</span> 
-                    <span class="author-block"><sup>†</sup>Corresponding author,</span> </br>
-                  <span class="author-block"><sup>1</sup>Max Planck Institute for Intelligent Systems,</span> 
-                  <span class="author-block"><sup>2</sup>ETH Zürich,</span> </br>
-                  <span class="author-block"><sup>3</sup>Meshcapade,</span>
+                    <span class="author-block"><sup>1</sup>Max Planck Institute for Intelligent Systems,</span> 
+                  <span class="author-block"><sup>2</sup>ETH Zürich,</span> 
+                  <span class="author-block"><sup>3</sup>Meshcapade,</span> </br>
                   <span class="author-block"><sup>4</sup>Tsinghua University,</span>
-                  <span class="author-block"><sup>5</sup>University of Cambridge</span>
+                  <span class="author-block"><sup>5</sup>University of Cambridge,</span> 
+                  <span class="author-block"><sup>*</sup>Equal Contribution</span> 
+                  <!-- <span class="author-block"><sup>†</sup>Corresponding author</span>  -->
+               
                 </div>
       
                 <div class="column has-text-centered">
@@ -168,8 +170,9 @@
       
                   <!-- Arxiv Link. -->
                   <span class="link-block">
-                    <a target="_blank" href="chathuman.github.io"
-                       class="external-link button is-normal is-rounded is-dark">
+                    <!-- <a target="_blank" href="chathuman.github.io" -->
+                    <a href="https://arxiv.org/abs/2405.04533" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                           <i class="fas fa-file"></i>
                       </span>
@@ -209,19 +212,93 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <video id="teaser" autoplay muted loop width="100%">
+                <!-- <video id="teaser" autoplay muted loop width="100%">
                     <source src="media/videos/chathuman_shortvideo.mp4"
                             type="video/mp4">
-                </video>
+                </video> -->
+                <img src="media/figures/chathuman_teaser.jpg" width="150%" />
+
                 <h2 class=" subtitle has-text-centered" style="padding-top: 10px">
-                    <p align="left">
-                        ChatHuman is a multi-modal LLM specialized for understanding humans and their 3D behavior with the assistance of 24 human-related tools.
+                    <p align="middle">
+                        ChatHuman is a multi-modal LLM specialized for understanding humans with the assistance of tools.
                     </p>
                 </h2>
             </div>
         </div>
     </section>
 
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+            <!-- <div class="item item-steve">
+                <img class="preload" src="./results/recon/novel_view_split_tex/DSC_7147_novel_view.gif" width="200" height="200">
+            </div> -->
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_robotics_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_health_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_game_2.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_security_2.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_robotics_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_security_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_art_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_fashion_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_game_1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="media/videos/demo_health_2.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+  
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
@@ -242,7 +319,7 @@
                     controls
                     muted
                     loop
-                    width="99%">
+                    width="80%">
                     <source src="media/videos/chathuman_longvideo.mp4" 
                     type="video/mp4">
                   </video>
@@ -254,13 +331,32 @@
     </section>
 
 
-
+    <section class="section">
+        <div class="container is-max-desktop">
+      
+          <!-- Method. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3" style="margin-top: -20px">Method</h2>
+              <img src="media/figures/pipeline.png" class="center" width="85%">
+              <div class="content has-text-justified" style="padding-top: 15px">
+                <b>ChatHuman</b> takes input text queries, images, or other 3D human-related modalities such as vectors like SMPL pose. 
+                Then, based on the user query, ChatHuman adopts a paper-based retrieval-augmented generation mechanism to generate a textual response about the tool use and call the tools.
+                Finally, the tool results are transformed into a textual or visual format and fed into the multimodal LLM-based agent, which will incorporate the tool results with its generic world knowledge to generate a response in the form of text, images, or other modalities related to 3D humans.</p>
+            </div>
+      
+            </div>
+          </div>
+          <!--/ Animation. -->
+      
+        </div>
+      </section>
 
     <section class="section">
         <div class="container is-max-desktop">
-
+        <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Real World Application</h2>
-
+    </div>
         <div class="columns">
             <div class="column has-text-centered">
   
@@ -293,21 +389,6 @@
             </div>
           </div>
 
-
-            <!-- Overview. -->
-            <div class="columns is-centered" style="margin-top: 15px">
-                <div class="column is-full-width">
-                    <h2 class="title is-4">Method Overview</h2>
-                    <img src="media/figures/pipeline.png">
-                    <div class="content has-text-justified" style="padding-top: 15px">
-                        <p><b>1.</b> ChatHuman takes input text queries, images, or other 3D human-related modalities such as vectors like SMPL pose</p>
-                        <p><b>2.</b> Then, based on the user query, ChatHuman adopts a paper-based retrieval-augmented generation mechanism to generate a textual response about the tool use and call the tools.</p>
-                        <p><b>3.</b> Finally, the tool results are transformed into a textual or visual format and fed into the multimodal LLM-based agent, which will incorporate the tool results with its generic world knowledge to generate a response in the form of text, images, or other modalities related to 3D humans.</p>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -319,11 +400,29 @@
 @inproceedings{jing2024chathuman,
     author={Lin, Jing and Feng, Yao and Liu, Weiyang and  Black, Michael J}
     title={{ChatHuman}: Language-driven {3D} Human Understanding with Retrieval-Augmented Tool Reasoning},
- journal={arXiv preprint arXiv:xxxx.xxxxx},
+ journal={arXiv preprint arXiv:2405.04533},
  year = {2024}}
 </code></pre>
         </div>
     </section>
+
+    <div class="container is-max-desktop">
+        <div class="columns is-centered" style="margin-top: 15px">
+        <div class="column is-full-width">
+            <h2 class="title is-4">Acknowledgements</h2>
+            <div class="content has-text-justified" style="padding-top: 15px">
+                <p> We thank Naureen Mahmood, Nicolas Keller and 
+                    Nicolas Heron for the support of the data collection.
+                    <br>
+                    <b>Disclosure.</b> 
+                    MJB has received research gift funds from Adobe, Intel, Nvidia, Meta/Facebook, and Amazon.  MJB has financial interests in Amazon and Meshcapade GmbH.
+While MJB is a co-founder and Chief Scientist at Meshcapade, his research in this project was performed solely at, and funded solely by, the Max Planck Society.
+                 </p>
+                 <br>
+                </div>
+            
+        </div>
+    </div>
 
 
     <footer class="footer">
