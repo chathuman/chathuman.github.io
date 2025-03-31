@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="ChatHuman: Language-driven 3D Human Understanding with Retrieval-Augmented Tool Reasoning">
+    <meta name="description" content="ChatHuman: Chatting about 3D Humans with Tools">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ChatHuman</title>
 
@@ -117,13 +117,13 @@
           <div class="container is-fullhd">
             <div class="columns is-centered">
               <div class="column has-text-centered">
-                <h1 class="title is-3 publication-title">ChatHuman: Language-driven 3D Human Understanding </br> with Retrieval-Augmented Tool Reasoning</h1>
+                <h1 class="title is-3 publication-title">ChatHuman: Language-driven 3D Human Understanding with Tools</h1>
                 <div class="is-size-5 publication-authors">
                   <span class="author-block">
                     <a target="_blank" href="https://jinglin7.github.io/">Jing Lin</a><sup>3,4,*</sup>,
                   </span>
                   <span class="author-block">
-                    <a target="_blank" href="https://scholar.google.com/citations?user=wNQQhSIAAAAJ&hl=en">Yao Feng</a><sup>1,2,3,*,†</sup>,
+                    <a target="_blank" href="https://scholar.google.com/citations?user=wNQQhSIAAAAJ&hl=en">Yao Feng</a><sup>2,3,*,†</sup>,
                   </span>
                   <span class="author-block">
                     <a target="_blank" href="https://wyliu.com/">Weiyang Liu</a><sup>1,5</sup>,
@@ -135,7 +135,7 @@
       
                 <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Max Planck Institute for Intelligent Systems,</span> 
-                  <span class="author-block"><sup>2</sup>ETH Zürich,</span> 
+                  <span class="author-block"><sup>2</sup>Standford University,</span> 
                   <span class="author-block"><sup>3</sup>Meshcapade,</span> </br>
                   <span class="author-block"><sup>4</sup>Tsinghua University,</span>
                   <span class="author-block"><sup>5</sup>University of Cambridge,</span> 
@@ -158,7 +158,7 @@
                     </span>
                     
                     <!-- Gradio Demo Link. -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                         <a href="http://chathuman.natapp1.cc/" target="_blank"
                            class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -166,7 +166,7 @@
                         </span>
                         <span>Demo</span>
                       </a>
-                    </span>
+                    </span> -->
       
                   <!-- Arxiv Link. -->
                   <span class="link-block">
@@ -216,7 +216,7 @@
                     <source src="media/videos/chathuman_shortvideo.mp4"
                             type="video/mp4">
                 </video> -->
-                <img src="media/figures/chathuman_teaser.jpg" width="150%" />
+                <img src="media/figures/chathuman_teaser_v2.png" width="150%" />
 
                 <h2 class=" subtitle has-text-centered" style="padding-top: 10px">
                     <p align="middle">
@@ -307,7 +307,10 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p margin="0">
-                            Numerous methods have been proposed to detect, estimate, and analyze properties of people in images, including the estimation of 3D pose, shape, contact, human-object interaction, emotion, and more. Each of these methods works in isolation instead of synergistically. Here we address this problem and build a language-driven human understanding system that combines and integrates the skills of many different methods. To do so, we fine-tune a Large Language Model (LLM) to select and use a wide variety of existing tools in response to user inputs. In doing so, our ChatHuman is able to combine information from multiple tools to solve problems more accurately than the individual tools themselves and to leverage tool output to improve its ability to reason about humans. The novel features of ChatHuman include leveraging academic publications to guide the application of 3D human-related tools, employing a retrieval augmented generation model to generate in-context-learning examples for handling new tools, and discriminating and integrating tool results to enhance 3D human understanding. Extensive quantitative evaluation shows that ChatHuman outperforms existing models in both tool selection accuracy and performance across multiple 3D human-related tasks. ChatHuman is a step towards consolidating diverse methods for human analysis into a single, powerful, system for reasoning about people in 3D. 
+                            Numerous methods have been proposed to detect, estimate, and analyze properties of people in images, including 3D pose, shape, contact, human-object interaction, and emotion. While widely applicable in vision and other areas, such methods require expert knowledge to select, use, and interpret the results. 
+To address this, we introduce ChatHuman, a language-driven system that integrates the capabilities of specialized methods into a unified framework.  ChatHuman functions as an assistant proficient in utilizing, analyzing, and interacting with tools specific to 3D human tasks, adeptly discussing and resolving related challenges. Built on a Large Language Model (LLM) framework, ChatHuman is trained to autonomously select, apply, and interpret a diverse set of tools in response to user inputs.  Our approach overcomes significant hurdles in adapting LLMs to 3D human tasks, including the need for domain-specific knowledge and the ability to interpret complex 3D outputs. 
+The innovations of ChatHuman include leveraging academic publications to instruct the LLM on tool usage, employing a retrieval-augmented generation model to create in-context learning examples for managing new tools, and effectively discriminating between and integrating tool results by transforming specialized 3D outputs into comprehensible formats. 
+Experiments demonstrate that ChatHuman surpasses existing models in both tool selection accuracy and overall performance across various 3D human tasks, and it supports interactive chatting with users. ChatHuman represents a significant step toward consolidating diverse analytical methods into a unified, robust system for 3D human tasks.
                     </div>
                 </div>
             </div>
@@ -398,7 +401,7 @@
             <pre>
 <code>
     @misc{lin2024chathuman,
-        title={{ChatHuman}: Language-driven {3D} Human Understanding with Retrieval-Augmented Tool Reasoning},
+        title={{ChatHuman}: Language-driven {3D} Human Understanding with Tools},
         author={Jing Lin and Yao Feng and Weiyang Liu and Michael J. Black},
         year={2024},
         eprint={2405.04533},
